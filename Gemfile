@@ -7,6 +7,7 @@ ruby '2.6.0'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 gem 'mysql2'
 gem 'dotenv-rails'
+gem 'audited'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
