@@ -8,10 +8,12 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 gem 'mysql2'
 gem 'dotenv-rails'
 gem 'audited'
+gem 'twitter'
+gem 'oauth'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
+# gem 'sass-rails', '>= 6'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -41,11 +43,13 @@ end
 
 group :test do
   gem 'rubocop', '~> 0.92.0', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+  # gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
+  # gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
