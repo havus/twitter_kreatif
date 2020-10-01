@@ -85,6 +85,10 @@ GEM
       railties (>= 3.2, < 6.1)
     equalizer (0.0.11)
     erubi (1.9.0)
+    faraday (0.17.3)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.13.1)
+      faraday (>= 0.7.4, < 1.0)
     ffi (1.13.1)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -244,6 +248,8 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   dotenv-rails
+  faraday
+  faraday_middleware
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   mysql2

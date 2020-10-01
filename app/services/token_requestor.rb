@@ -10,7 +10,7 @@ class TokenRequestor
 
   def perform
     callback_url    = "#{ENV['CLIENT_BASE_URL']}/api/v1/users/access_token"
-    oauth_consumer  = OAuth::Consumer.new(
+    oauth_consumer  = ::OAuth::Consumer.new(
       ENV['TWITTER_CONSUMER_KEY'],
       ENV['TWITTER_CONSUMER_SECRET'],
       site: 'https://api.twitter.com'
